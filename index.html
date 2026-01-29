@@ -154,7 +154,7 @@
             const uttr = new SpeechSynthesisUtterance();
             uttr.text = text;
             uttr.lang = 'en-US';
-            uttr.rate = 0.85;
+            uttr.rate = 0.77; // 読み上げ速度
             if (onEndCallback) uttr.onend = onEndCallback;
             speechSynthesis.cancel();
             speechSynthesis.speak(uttr);
